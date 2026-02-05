@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bomb Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="home">
+  <button id="createGame">פתיחת משחק</button>
+  <input id="joinCode" placeholder="הכנס קוד">
+  <button id="joinGame">הצטרף</button>
+</div>
+
+<div id="waiting" class="hidden">
+  <h2>קוד המשחק:</h2>
+  <h1 id="gameCodeText"></h1>
+  <p>ממתין לשחקן נוסף...</p>
+</div>
+
+<div id="nameScreen" class="hidden">
+  <h2>הכנס שם</h2>
+  <input id="playerNameInput" placeholder="השם שלך">
+  <button id="saveName">אישור</button>
+  <p id="waitingName" class="hidden">ממתין לשחקן השני...</p>
+</div>
+
+<div id="gameScreen" class="hidden">
+  <h2 id="turnText"></h2>
+  <div id="hearts"></div>
+  <div id="board"></div>
+</div>
+
+<script type="module" src="game.js"></script>
+</body>
+</html>
